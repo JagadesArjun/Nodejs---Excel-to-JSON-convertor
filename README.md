@@ -1,6 +1,6 @@
 # Node.js - Excel to json convertor
 
-###Quick Setup
+Quick Setup
 
 1) `npm install` <br>
 2) `node app.js` <br>
