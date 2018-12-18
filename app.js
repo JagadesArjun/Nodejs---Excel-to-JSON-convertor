@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 var excelToJson = require('convert-excel-to-json');
 var fs = require('fs');
+var cors = require('cors');
+
+app.use(cors());
 
 app.use(bodyParser.json());
 
