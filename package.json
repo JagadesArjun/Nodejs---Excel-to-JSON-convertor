@@ -1,0 +1,25 @@
+{
+  "name": "Nodejs-Excel-to-json-convertor",
+  "version": "1.0.0",
+  "description": "Excel to json convertor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "jagadesarjun188@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "multer": "^1.1.0",
+    "xls-to-json-lc": "^0.3.4",
+    "xlsx-to-json-lc": "^0.4.1"
+  },
+  "engines": {
+    "node": "8.6.0"
+  }
+}
