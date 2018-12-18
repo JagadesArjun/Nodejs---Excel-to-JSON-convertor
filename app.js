@@ -61,12 +61,12 @@ app.post('/parse', function (req, res) {
 
 });
 
-// Commenting to eliminate UI case
-app.use(express.static('public'));
-
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + "/index.html");
-});
+// // Commenting to eliminate UI case
+// app.use(express.static('public'));
+//
+// app.get('/', function (req, res) {
+//     res.sendFile(__dirname + "/index.html");
+// });
 
 app.listen('3000', function () {
     console.log('running on 3000...');
