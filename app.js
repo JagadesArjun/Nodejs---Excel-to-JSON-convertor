@@ -61,7 +61,10 @@ app.post('/parse', function (req, res) {
                     D: 'gender',
                     E: 'mobilenumber',
                     F: 'registerno'
-                }
+                },
+                header:{
+                    rows: 1
+                },
             });
             fs.unlinkSync(req.file.path);
             res.json({error_code: 0, err_desc: null, data: result});
