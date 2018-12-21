@@ -54,6 +54,14 @@ app.post('/parse', function (req, res) {
 
             const result = excelToJson({
                 sourceFile: req.file.path,
+                columnToKey: {
+                    A: 'email',
+                    B: 'firstname',
+                    C: 'lastname',
+                    D: 'gender',
+                    E: 'mobilenumber',
+                    F: 'registerno'
+                }
             });
             fs.unlinkSync(req.file.path);
             res.json({error_code: 0, err_desc: null, data: result});
