@@ -55,12 +55,7 @@ app.post('/parse', function (req, res) {
             const result = excelToJson({
                 sourceFile: req.file.path,
                 columnToKey: {
-                    A: 'email',
-                    B: 'firstname',
-                    C: 'lastname',
-                    D: 'gender',
-                    E: 'mobilenumber',
-                    F: 'registerno'
+                    '*': '{{columnHeader}}'
                 },
                 header:{
                     rows: 1
